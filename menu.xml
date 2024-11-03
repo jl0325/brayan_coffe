@@ -26,18 +26,6 @@
             <description>Delicious pancake filled with feta and served with salad</description>
             <image>feta_pancakes_salad.jpg</image>
         </item>
-        <item>
-            <name>Grilled Chicken Wrap</name>
-            <price>$16.00</price>
-            <description>Grilled chicken with salad in a soft tortilla wrap</description>
-            <image>grilled_chicken_wrap.jpg</image>
-        </item>
-        <item>
-            <name>Avocado Toast</name>
-            <price>$12.00</price>
-            <description>Wholegrain toast topped with fresh avocado and herbs</description>
-            <image>avocado_toast.jpg</image>
-        </item>
     </meals>
     
     <beverages>
