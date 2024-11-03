@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Bryan's Café</title>
+    <style>
+        /* Base Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #4d2600; /* dark brown */
+            background-color: #fff7e6; /* light beige */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Navigation */
+        .nav {
+            background-color: #ff7f50; /* coral orange */
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        .logo {
+            font-size: 1.5em;
+        }
+
+        /* Main Content */
+        .main {
+            flex: 1;
+            padding: 20px;
+            max-width: 1000px; /* Increased max width */
+            margin: auto;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f5e4d3; /* soft beige */
+            border-left: 8px solid #8b4513; /* saddle brown */
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            display: flex;
+            flex-direction: row; /* Align items side by side */
+            align-items: center; /* Center items vertically */
+            gap: 20px; /* Space between image and text */
+        }
+
+        .section img {
+            max-width: 45%; /* Adjusted width for side-by-side layout */
+            height: auto;
+            border-radius: 8px;
+            border: 3px solid #8b4513; /* brown border */
+        }
+
+        /* Section Titles */
+        .section-title {
+            font-size: 2em; /* Increased title size */
+            color: #8b4513; /* dark brown */
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        /* Text Styling */
+        .section p {
+            font-size: 1.2em; /* Increased font size for text */
+            line-height: 1.5; /* Improved line height for readability */
+            flex: 1; /* Allow text to take up available space */
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #4d2600; /* dark brown */
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9em;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .nav a {
+                margin: 0 5px;
+                font-size: 0.9em;
+            }
+            .section-title {
+                font-size: 1.5em; /* Smaller title size on mobile */
+            }
+            .section {
+                flex-direction: column; /* Stack image and text on mobile */
+                align-items: flex-start; /* Align items to start */
+            }
+            .section img {
+                max-width: 100%; /* Full width on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="Bryan's Café Logo" style="height: 50px;"/> <!-- Adjust height as needed -->
+            </a>
+        </div>
+        <div>
+            <a href="index.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    <!-- Main Content -->
+    <main class="main">
+
+        <!-- About Section -->
+        <div class="section">
+            <img src="about_cafe.jpg" alt="Café interior">
+            <div>
+                <h2 class="section-title">About Us</h2>
+                <p>At Bryan's Café, we believe in the power of good food to bring people together. Our cozy café offers a unique selection of meals and beverages, all crafted from the freshest ingredients sourced from local suppliers. Whether you're stopping by for a morning coffee or enjoying a leisurely lunch with friends, we strive to provide a delightful experience for every guest.</p>
+                <p>Our friendly staff is dedicated to making your visit memorable, ensuring you feel at home in our warm and inviting atmosphere. We cater to a variety of tastes and dietary preferences, offering everything from hearty meals to light snacks, as well as delicious vegan and gluten-free options.</p>
+            </div>
+        </div>
+
+        <!-- History Section -->
+        <div class="section">
+            <img src="history_cafe.jpg" alt="Café history image">
+            <div>
+                <h2 class="section-title">Our History</h2>
+                <p>Founded in 2010 by Bryan and his team of culinary enthusiasts, Bryan’s Café has grown from a small local eatery into a beloved community hub. With a vision to create a welcoming space for all, we have worked hard to build a reputation for quality and service that reflects our values.</p>
+                <p>Over the years, we have introduced seasonal menus, hosted community events, and forged strong relationships with local farmers and suppliers. Our commitment to sustainability and supporting local businesses is at the heart of what we do. We are proud to have created a space where customers can enjoy great food while supporting their community.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <script>
+            document.write(`&copy; ${new Date().getFullYear()} Bryan's Café`);
+        </script>
+    </footer>
+
+</body>
+</html>
